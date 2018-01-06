@@ -11,7 +11,7 @@ import SearchBar1 from './Component/SearchBar1';
 import FilterPage from './Component/FilterPage';
 
 class App extends Component {
-
+  step = 0
   constructor(props) {
     super(props);
     this.state = {
@@ -56,7 +56,7 @@ class App extends Component {
     this.changefilter_Number = this.changefilter_Number.bind(this)
     this.changefilter_Bus_Money = this.changefilter_Bus_Money.bind(this)
     this.nextStep = this.nextStep.bind(this)
-
+    this.nextPage = this.nextPage.bind(this)
   }
 
   // componentWillMount(){
@@ -139,15 +139,20 @@ class App extends Component {
     })
     alert('next')
   }
+  nextPage(){
+
+    this.setState({
+      step : 1
+    })
+  }
   render() {
     return (
       <div>
         <div style={{margin:'auto'}}>
           <div>
-            <FirstPageTop next={this.nextStep}/>
+            {this.state.step==0?<FirstPageTop next={this.nextStep} nextPage={this.nextPage}/>:""}
           </div>
-
-          <FilterPage />
+          {this.state.step == 1?<FilterPage />:''}
         </div>
       </div>
     );

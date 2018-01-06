@@ -15,7 +15,7 @@ class FirstPageTop extends Component{
             <div style={{height:'100vh',
                         backgroundColor:"red",}}>
                 <div style={{paddingTop:'70vh'}}>
-                    <SearchBar1 changeBudget={this.changeBudget}/>
+                    <SearchBar1 changeBudget={this.changeBudget} nextPage={this.props.nextPage}/>
                 </div>
             </div>
         )

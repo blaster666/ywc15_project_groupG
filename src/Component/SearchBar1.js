@@ -29,6 +29,7 @@ class SearchBar1 extends Component{
         this.setState({
           visible2: false,
         });
+        
       }
       handleCancel = (e) => {
         console.log(e);
@@ -54,7 +55,7 @@ class SearchBar1 extends Component{
           title="ต้องการอะไรบ้าง?"
           visible={this.state.visible2}
         //   onOk={this.handleOk2}this.props.next
-          onOk={this.props.next}
+          onOk={this.props.nextPage}
           onCancel={this.handleCancel}
         >
           <SearchBar changefilter_Number={this.changefilter_Number}
