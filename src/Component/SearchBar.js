@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Form, Row, Col, Input, Button, Icon, Checkbox } from 'antd';
 import { Radio } from 'antd';
+import { DatePicker } from 'antd';
+const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
 const RadioGroup = Radio.Group;
 
 class SearchBar extends Component{
@@ -9,6 +11,7 @@ class SearchBar extends Component{
         super(props);
   
       }
+
 
     render(){
         return(
@@ -29,18 +32,20 @@ class SearchBar extends Component{
 
                
                     <Row >
-                        <Col xs={12} sm={12} md={4} lg={4}  span={4} offset={2}>
+                        <Col xs={12} sm={12} md={6} lg={6}  span={6} offset={1}>
                         <div>จำนวนคน</div>
                         <div><Input onChange={(e) => 
                             { this.props.changefilter_Number(e.target.value); }}/></div></Col>
-                        <Col xs={12} sm={12} md={4} lg={4}  span={4} offset={2}>
+                        <Col xs={12} sm={12} md={6} lg={6}  span={6} offset={1}>
                         <div>วันไป</div>
-                        <div><Input onChange={(e) => 
-                            { this.props.changefilter_Bus_date_going(e.target.value); }}/></div></Col>
-                        <Col xs={12} sm={12} md={4} lg={4}  span={4} offset={2}>
+                        <div><DatePicker onChange={(e) => 
+                            { this.props.changefilter_Bus_date_going(e); }} />
+                            
+                        </div></Col>
+                        <Col xs={12} sm={12} md={6} lg={6}  span={6} offset={1}>
                         <div>วันกลับ</div>
-                        <div><Input onChange={(e) => 
-                            { this.props.changefilter_Bus_GoBack(e.target.value); }}/></div></Col>    
+                        <div><DatePicker onChange={(e) => 
+                            { this.props.changefilter_Bus_date_going(e); }} /></div></Col>    
                         
                     </Row>
                     <div style={{height:"5vh"}}></div>
