@@ -61,7 +61,7 @@ class App extends Component {
       <div>
         <div>
           <FirstPageTop />
-          <Button type="primary" value="2" onClick={this.changeState()}>Test</Button>
+          <Button type="primary" onClick={() => { this.changeState("2")}}>Test</Button>
           {this.state.visibleState}
         </div>
       </div>
