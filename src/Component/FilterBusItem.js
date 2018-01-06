@@ -19,7 +19,7 @@ class FilterBusItem extends Component{
                 
                 
                 <div style={{
-                    backgroundColor:'yellow',
+                    backgroundColor:'blue',
                     width:'30%',
                     height:'198px',
                     display:'inline-block'

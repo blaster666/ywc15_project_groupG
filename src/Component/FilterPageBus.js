@@ -30,41 +30,41 @@ class FilterPageBus extends Component{
         super(props);
         this.state = {
             bus : [{
-                name:'asdasdasd',
-                a:'asdasdasd',
-                b:'asdasdasd'
+                name:'aaaaaaaaaaaaaaaa',
+                a:'aaaaaaaaaaaaaaaa',
+                b:'aaaaaaaaaaaaaaaa'
             },{
-                name:'kkkkkk',
-                a:'kkkkkk',
-                b:'kkkkkk'
-            },{
-                name:'llllllll',
-                a:'llllllll',
-                b:'llllllll'
-            },{
-                name:'asdasdasd',
-                a:'asdasdasd',
-                b:'asdasdasd'
-            },{
-                name:'kkkkkk',
-                a:'kkkkkk',
-                b:'kkkkkk'
+                name:'aaaaaaaaaaaaaaaa',
+                a:'aaaaaaaaaaaaaaaa',
+                b:'aaaaaaaaaaaaaaaa'
             },{
                 name:'llllllll',
                 a:'llllllll',
                 b:'llllllll'
             },{
-                name:'asdasdasd',
-                a:'asdasdasd',
-                b:'asdasdasd'
+                name:'aaaaaaaaaaaaaaaa',
+                a:'aaaaaaaaaaaaaaaa',
+                b:'aaaaaaaaaaaaaaaa'
             },{
-                name:'kkkkkk',
-                a:'kkkkkk',
-                b:'kkkkkk'
+                name:'aaaaaaaaaaaaaaaa',
+                a:'aaaaaaaaaaaaaaaa',
+                b:'aaaaaaaaaaaaaaaa'
             },{
                 name:'llllllll',
                 a:'llllllll',
                 b:'llllllll'
+            },{
+                name:'aaaaaaaaaaaaaaaa',
+                a:'aaaaaaaaaaaaaaaa',
+                b:'aaaaaaaaaaaaaaaa'
+            },{
+                name:'aaaaaaaaaaaaaaaa',
+                a:'aaaaaaaaaaaaaaaa',
+                b:'aaaaaaaaaaaaaaaa'
+            },{
+                name:'aaaaaaaaaaaaaaaa',
+                a:'aaaaaaaaaaaaaaaa',
+                b:'aaaaaaaaaaaaaaaa'
             }]
         }
         for(let i=0;i<this.state.bus.length;i++){
