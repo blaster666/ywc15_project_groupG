@@ -17,25 +17,23 @@ class SearchBar extends Component{
         return(
             <div style={{display: 'flex', justifyContent: 'center'
                         }}>
+                <center>
                 <div>
                     <div style={{height:"40px"}}></div>
 
                
                     <Row >
-                        <Col xs={12} sm={12} md={6} lg={6}  span={6} offset={1}>
+                        <Col xs={12} sm={12} md={7} lg={7}  span={7} offset={1}>
                         <div>จำนวนคน</div>
-                        <div><Input onChange={(e) => 
-                            { this.props.changefilter_Number(e.target.value); }}/></div></Col>
-                        <Col xs={12} sm={12} md={6} lg={6}  span={6} offset={1}>
+                        <div><Input type="number"/></div></Col>
+                        <Col xs={12} sm={12} md={7} lg={7}  span={7} offset={1}>
                         <div>วันไป</div>
-                        <div><DatePicker onChange={(e) => 
-                            { this.props.changefilter_Bus_date_going(e); }} />
+                        <div><DatePicker />
                             
                         </div></Col>
-                        <Col xs={12} sm={12} md={6} lg={6}  span={6} offset={1}>
+                        <Col xs={12} sm={12} md={7} lg={7}  span={7} offset={1}>
                         <div>วันกลับ</div>
-                        <div><DatePicker onChange={(e) => 
-                            { this.props.changefilter_Bus_date_going(e); }} /></div></Col>    
+                        <div><DatePicker/></div></Col>    
                         
                     </Row>
                     <div style={{height:"5vh"}}></div>
@@ -50,6 +48,7 @@ class SearchBar extends Component{
 
                     
                 </div>
+                </center>
 
             </div>
         )

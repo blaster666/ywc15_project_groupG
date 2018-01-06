@@ -47,9 +47,37 @@ class SearchBar1 extends Component{
           onOk={this.handleOk}
           onCancel={this.handleCancel}
         >
-          <div>ที่พัก + รถ</div>
-          <div>ที่พัก</div>
-          <div>รถ</div>
+          <div>
+            <center>
+            <div style={{display:'inline-block',marginRight:'30px'}}>
+                <div style={{display:'inline-block',marginRight:'10px'}}>
+                    <Checkbox checked></Checkbox>
+                </div>
+                <div style={{display:'inline-block'}}>
+                    <img></img>
+                    <p>ที่พัก + รถบัส</p>   
+                </div>          
+            </div>
+            <div style={{display:'inline-block',marginRight:'30px'}}>
+                <div style={{display:'inline-block',marginRight:'10px'}}>
+                    <Checkbox checked></Checkbox>
+                </div>
+                <div style={{display:'inline-block'}}>
+                    <img></img>
+                    <p>ที่พัก</p>   
+                </div>          
+            </div>
+            <div style={{display:'inline-block',marginRight:'30px'}}>
+                <div style={{display:'inline-block',marginRight:'10px'}}>
+                    <Checkbox checked></Checkbox>
+                </div>
+                <div style={{display:'inline-block'}}>
+                    <img></img>
+                    <p>รถบัส</p>   
+                </div>          
+            </div>
+            </center>
+          </div>
         </Modal>
         <Modal
           title="ต้องการอะไรบ้าง?"
@@ -66,20 +94,23 @@ class SearchBar1 extends Component{
                 <div>
                     <div style={{width:"60%", margin:"auto"}}>
                     <center>
-                        <Input placeholder="เลือกสถานที่" style={{width:'100px',margin:'auto'}}></Input>
+                        <Input placeholder="หัวหิน" style={{width:'500px',height:'40px',margin:'auto',borderRadius:'10px'}}></Input>
                     </center>
                     </div>
                     <br />
 
-                    <div style={{width:"60%", margin:"auto"}}>
-                    <Input placeholder="Money" size="large" onChange={(e) => 
+                    <div style={{width:"100%", margin:"auto"}}>
+                    <center>
+                    <Input placeholder="Money" size="large" style={{width:'500px',height:'40px',margin:'auto',borderRadius:'10px'}} onChange={(e) => 
                             { this.props.changeBudget(e.target.value); }}></Input>
+                    </center>
                     </div>
                     
                     
                     <br />
                     <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <Button type="primary" onClick={this.showModal}>ต่อไป</Button>
+                    <button onClick={this.showModal} style={{backgroundColor:'#ffcc33',borderRadius:'10px',border:'0',cursor:'pointer',width:'135px',height:'40px'}}>ต่อไป</button>
+                    {/* <Button type="primary" onClick={this.showModal}>ต่อไป</Button> */}
                 </div>
                 </div>
                 

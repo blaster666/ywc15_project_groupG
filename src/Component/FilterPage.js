@@ -3,6 +3,7 @@ import FilterPageResort from './FilterPageResort';
 import FilterPageBus from './FilterPageBus';
 import Booking from './Booking';
 import Conclude from './Conclude';
+import { Button,Modal } from 'antd';
 import Resort from './Resort';
 import Bus from './Bus';
 
@@ -52,16 +53,18 @@ class FilterPage extends Component{
     render(){
         return(
             <div style={{
-                    backgroundColor:"yellow",  
                     marginTop:'20px'
                 }}>
                 
-                <button onClick={this.ShowFilterPageResort}>0.Resort</button>
-                <button onClick={this.ShowAresortPage}>1.A Resort</button>
-                <button onClick={this.ShowFilterPageBus}>2.Bus</button>
-                <button onClick={this.ShowAbusPage}>2.5.A Bus</button>
-                <button onClick={this.ShowBookingPage}>3.Booking</button>
-                <button onClick={this.ShowConcludePage}>4.Conclude</button>
+                <button onClick={this.ShowFilterPageResort}>ที่พักที่เหมาะกับคุณ</button>
+                {/* <button onClick={this.ShowAresortPage}>1.A Resort</button> */}
+                <button onClick={this.ShowFilterPageBus}>รถบัส</button>
+                {/* <button onClick={this.ShowAbusPage}>2.5.A Bus</button> */}
+                <button onClick={this.ShowBookingPage}>ยืนยันการจอง</button>
+                <button onClick={this.ShowConcludePage}>เสร็จสมบูรณ์</button>
+
+                <Button type="danger" style={{float:'right'}}>ที่ถูกใจ</Button>
+
 
                 {this.state.ShowPage=='resort'?<FilterPageResort next={this.ShowFilterPageBus}/>:
                 this.state.ShowPage=='Aresort'?<Resort back={this.ShowFilterPageResort} next={this.ShowFilterPageBus}/>:

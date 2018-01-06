@@ -76,7 +76,7 @@ class FilterPageResort extends Component{
     
     render(){
         return(
-            <div style={{backgroundColor:'green',margin:'auto'}}>
+            <div style={{margin:'auto'}}>
                 <Modal
           title="รีสอร์ท..."
           visible={this.state.visible}

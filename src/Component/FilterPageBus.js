@@ -76,9 +76,9 @@ class FilterPageBus extends Component{
 
     render(){
         return(
-            <div style={{backgroundColor:'blue',margin:'auto'}}>
+            <div style={{margin:'auto'}}>
                 <Modal
-          title="รีสอร์ท..."
+          title="รถบัส"
           visible={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
@@ -86,7 +86,7 @@ class FilterPageBus extends Component{
             <Bus/>
         </Modal>
                 {this.renderBusItem}
-                <Button type="primary" onClick={this.props.back}>Back</Button>
+                <Button type="primary" style={{width:'100%',marginTop:'20px'}} onClick={this.props.back}>Back</Button>
             </div>
         )
     }
