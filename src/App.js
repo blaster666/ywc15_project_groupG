@@ -9,6 +9,7 @@ import Bus from './Component/Bus'
 import FilterPageBus from './Component/FilterPageBus'
 import FilterPageResort from './Component/FilterPageResort'
 import Conclude from './Component/Conclude'
+import SearchBar from './Component/SearchBar';
 
 
 class App extends Component {
@@ -25,6 +26,17 @@ class App extends Component {
                        //2 = show resort ที่ select, 
                        //3 = show bus,
                        //4 = conclude,
+      filter_Resort_Place: "", //สถานที่
+      filter_Resort_Checkin: "", //เช็คอิน
+      filter_Resort_Checkout: "", //เช็คเอ้าท์
+      filter_Resort_Personal: "", //ผู้เข้าพัก
+      filter_Resort_Money: "", //เงิน
+      filter_Bus_from: "", //ต้นทาง
+      filter_Bus_to: "",//ปลายทาง
+      filter_Bus_date_going: "",//วันออกเดินทาง
+      filter_Bus_GoBack: "",//ไปกลับ ?
+      filter_Bus_Number: "",//จำนวนผู้โดยสาร
+      filter_Bus_Money: "",//เงิน
 
     };
     this.changeOptionSearch = this.changeOptionSearch.bind(this)
@@ -61,8 +73,9 @@ class App extends Component {
       <div>
         <div>
           <FirstPageTop />
-          <Button type="primary" onClick={() => { this.changeState("2")}}>Test</Button>
-          {this.state.visibleState}
+          <SearchBar changeState = {this.changeState}
+                     changeOptionSearch = {this.changeOptionSearch}
+                     changeFilter/>
         </div>
       </div>
     );
