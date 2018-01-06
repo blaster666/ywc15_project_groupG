@@ -12,7 +12,7 @@ class FilterBusItem extends Component{
             <div style={{
                 border:'1px solid black',
                 backgroundColor:'white',
-                width:'calc( 100% - 60px)',
+                width:'100%',
                 height:'200px',
                 margin:'10px auto',
                 }} onClick={this.props.next}>

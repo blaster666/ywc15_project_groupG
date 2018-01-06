@@ -11,8 +11,10 @@ class FirstPageTop extends Component{
     render(){
         return(
             <div style={{height:'100vh',
+            width:'100vw',
                         backgroundImage:'url(img/landing.jpg)',
-                        backgroundSize:'cover'}}>
+                        backgroundSize:'cover',
+                        marginLeft:'-10px'}}>
                 <div style={{paddingTop:'70vh'}}>
                     <SearchBar1 changeBudget={this.changeBudget} nextPage={this.props.nextPage}/>
                 </div>

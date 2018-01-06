@@ -54,7 +54,7 @@ class Booking extends Component{
                         <h3>รีสอร์ท xxx</h3>
                     </div>
                 </div>
-                <Button type="primary" onClick={this.props.back}>Back</Button>
+                {/* <Button type="primary" onClick={this.props.back}>Back</Button> */}
                 <Button type="primary" onClick={this.props.next} style={{marginLeft:'30px',width:'80%'}}>Submit</Button>
             </div>
         )

@@ -52,19 +52,20 @@ class FilterPage extends Component{
     }
     render(){
         return(
-            <div style={{
+            <div className="FilterPage" style={{
                     marginTop:'20px'
                 }}>
                 
-                <button onClick={this.ShowFilterPageResort}>ที่พักที่เหมาะกับคุณ</button>
-                {/* <button onClick={this.ShowAresortPage}>1.A Resort</button> */}
-                <button onClick={this.ShowFilterPageBus}>รถบัส</button>
-                {/* <button onClick={this.ShowAbusPage}>2.5.A Bus</button> */}
-                <button onClick={this.ShowBookingPage}>ยืนยันการจอง</button>
-                <button onClick={this.ShowConcludePage}>เสร็จสมบูรณ์</button>
-
-                <Button type="danger" style={{float:'right'}}>ที่ถูกใจ</Button>
-
+                <Button type={this.state.ShowPage=='resort'?"primary":''} onClick={this.ShowFilterPageResort} >ที่พักที่เหมาะกับคุณ</Button>
+                {/* <Button type={this.state.ShowPage==''?"primary":''} onClick={this.ShowAresortPage}>1.A Resort</Button> */}
+                <Button type={this.state.ShowPage=='bus'?"primary":''} onClick={this.ShowFilterPageBus}>รถบัส</Button>
+                {/* <Button type={this.state.ShowPage==''?"primary":''} onClick={this.ShowAbusPage}>2.5.A Bus</Button> */}
+                <Button type={this.state.ShowPage=='booking'?"primary":''} onClick={this.ShowBookingPage}>ยืนยันการจอง</Button>
+                <Button type={this.state.ShowPage=='conclude'?"primary":''} onClick={this.ShowConcludePage}>เสร็จสมบูรณ์</Button>
+                
+                <Button type="danger" style={{width:'70px',float:'right'}}>ที่ถูกใจ</Button>
+                <hr style={{marginTop:'1px'}}/>
+                
 
                 {this.state.ShowPage=='resort'?<FilterPageResort next={this.ShowFilterPageBus}/>:
                 this.state.ShowPage=='Aresort'?<Resort back={this.ShowFilterPageResort} next={this.ShowFilterPageBus}/>:
@@ -72,6 +73,9 @@ class FilterPage extends Component{
                 this.state.ShowPage=='Abus'?<Bus back={this.ShowFilterPageBus} next={this.ShowBookingPage}/>:
                 this.state.ShowPage=='booking'?<Booking back={this.ShowAbusPage} next={this.ShowConcludePage}/>:
                 this.state.ShowPage=='conclude'?<Conclude back={this.ShowBookingPage}/>: ''}
+
+{this.state.ShowPage=='conclude'?<Button type="primary" style={{width:'100%',marginTop:'20px'}}>กลับสู่หน้าแรก</Button>:''}
+                
             </div>
         )
     }

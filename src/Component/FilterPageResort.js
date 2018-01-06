@@ -40,30 +40,6 @@ class FilterPageResort extends Component{
                 name:'llllllll',
                 a:'llllllll',
                 b:'llllllll'
-            },{
-                name:'asdasdasd',
-                a:'asdasdasd',
-                b:'asdasdasd'
-            },{
-                name:'kkkkkk',
-                a:'kkkkkk',
-                b:'kkkkkk'
-            },{
-                name:'llllllll',
-                a:'llllllll',
-                b:'llllllll'
-            },{
-                name:'asdasdasd',
-                a:'asdasdasd',
-                b:'asdasdasd'
-            },{
-                name:'kkkkkk',
-                a:'kkkkkk',
-                b:'kkkkkk'
-            },{
-                name:'llllllll',
-                a:'llllllll',
-                b:'llllllll'
             }]
         }
 
