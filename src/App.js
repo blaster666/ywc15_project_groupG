@@ -4,8 +4,6 @@ import { Button } from 'antd'
 import axios from "axios"
 
 import FirstPageTop from './Component/FirstPageTop'
-import Resort from './Component/Resort'
-import Bus from './Component/Bus'
 import FilterPageBus from './Component/FilterPageBus'
 import FilterPageResort from './Component/FilterPageResort'
 import SearchBar from './Component/SearchBar';
@@ -152,8 +150,6 @@ class App extends Component {
           </div>
 
           <FilterPage />
-          <Resort />
-          <Bus />
         </div>
       </div>
     );
