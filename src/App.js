@@ -151,6 +151,7 @@ class App extends Component {
         <div style={{margin:'auto'}}>
           <div>
             {this.state.step==0?<FirstPageTop next={this.nextStep} nextPage={this.nextPage}/>:""}
+
           </div>
           {this.state.step == 1?<FilterPage />:''}
         </div>
