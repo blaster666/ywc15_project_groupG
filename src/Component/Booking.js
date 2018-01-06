@@ -24,7 +24,7 @@ class Booking extends Component{
     }
     render(){
         return(
-            <div style={{maxWidth:'1024px',margin:'auto'}}>
+            <div style={{margin:'auto'}}>
                 <div style={{width:'60%',display:'inline-block'}}>
                     <div style={{border:'1px solid #e2e2e2',margin:'auto'}}>
                         ชื่อผู้จอง
@@ -39,17 +39,17 @@ class Booking extends Component{
                         <br/>
                         {this.state.isVisitor?'':<Input placeholder="yourname"/>}
                     </div>
-                    <div style={{maxWidth:'1024px',border:'1px solid #e2e2e2',margin:'auto'}}>
+                    <div style={{border:'1px solid #e2e2e2',margin:'auto'}}>
                         <h2>นโยบายการจอง</h2>
                         <p>alsjhdjkasdhjkasdhjkasdhjkasdhjkasdhajskdhajskdhjaksdhjkasdhjkashdjkahsd</p>
                     </div>
-                    <div style={{maxWidth:'1024px',border:'1px solid #e2e2e2',margin:'auto'}}>
+                    <div style={{border:'1px solid #e2e2e2',margin:'auto'}}>
                         <h2>รายละเอียดราคา</h2>
                         <h3>56,750 .-</h3>
                     </div>
                 </div>
                 <div style={{width:'40%',display:'inline-block',padding:'20px',marginTop:'0'}}>
-                    <div style={{maxWidth:'1024px',border:'1px solid #e2e2e2',margin:'auto'}}>
+                    <div style={{border:'1px solid #e2e2e2',margin:'auto'}}>
                         <h2>รายละเอียดการจอง</h2>
                         <h3>รีสอร์ท xxx</h3>
                     </div>

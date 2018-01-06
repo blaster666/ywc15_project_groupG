@@ -32,7 +32,6 @@ class FilterPage extends Component{
         return(
             <div style={{
                     backgroundColor:"yellow",  
-                    width: "100vw",
                     marginTop:'20px'
                 }}>
                 

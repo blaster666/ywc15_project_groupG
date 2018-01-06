@@ -132,26 +132,28 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div>
-          <FirstPageTop />
-          <SearchBar changefilter_Resort_Place={this.changefilter_Resort_Place}
-                     changefilter_Resort_Checkin={this.changefilter_Resort_Checkin}
-                     changefilter_Resort_Checkout={this.changefilter_Resort_Checkout}
-                     changefilter_Resort_Personal={this.changefilter_Resort_Personal}
-                     changefilter_Resort_Money={this.changefilter_Resort_Money}
-                     changefilter_Bus_from={this.changefilter_Bus_from}
-                     changefilter_Bus_to={this.changefilter_Bus_to}
-                     changefilter_Bus_date_going={this.changefilter_Bus_date_going}
-                     changefilter_Bus_GoBack={this.changefilter_Bus_GoBack}
-                     changefilter_Bus_Number={this.changefilter_Bus_Number}
-                     changefilter_Bus_Money={this.changefilter_Bus_Money}
-          />
-        </div>
+        <div style={{maxWidth:'1024px',margin:'auto'}}>
+          <div>
+            <FirstPageTop />
+            <SearchBar changefilter_Resort_Place={this.changefilter_Resort_Place}
+                      changefilter_Resort_Checkin={this.changefilter_Resort_Checkin}
+                      changefilter_Resort_Checkout={this.changefilter_Resort_Checkout}
+                      changefilter_Resort_Personal={this.changefilter_Resort_Personal}
+                      changefilter_Resort_Money={this.changefilter_Resort_Money}
+                      changefilter_Bus_from={this.changefilter_Bus_from}
+                      changefilter_Bus_to={this.changefilter_Bus_to}
+                      changefilter_Bus_date_going={this.changefilter_Bus_date_going}
+                      changefilter_Bus_GoBack={this.changefilter_Bus_GoBack}
+                      changefilter_Bus_Number={this.changefilter_Bus_Number}
+                      changefilter_Bus_Money={this.changefilter_Bus_Money}
+            />
+          </div>
 
-        <FilterPage />
-        <Resort />
-        <Bus />
-        <Conclude />
+          <FilterPage />
+          <Resort />
+          <Bus />
+          <Conclude />
+        </div>
       </div>
     );
   }

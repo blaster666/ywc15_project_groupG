@@ -54,7 +54,7 @@ class FilterPageResort extends Component{
     
     render(){
         return(
-            <div style={{backgroundColor:'green',maxWidth:'1024px',margin:'auto'}}>
+            <div style={{backgroundColor:'green',margin:'auto'}}>
                 FilterPageResort
                 <br/>
                 { this.renderResortItem }

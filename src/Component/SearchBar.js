@@ -10,8 +10,7 @@ class SearchBar extends Component{
 
     render(){
         return(
-            <div style={{backgroundColor:"pink",
-                        width: "100vw",
+            <div style={{backgroundColor:"pink"
                         }}>
                 <div>
                     <Checkbox>ที่พัก</Checkbox>
