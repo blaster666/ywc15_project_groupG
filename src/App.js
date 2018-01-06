@@ -148,8 +148,10 @@ class App extends Component {
           />
         </div>
 
-        
+        <FilterPage />
         <Resort />
+        <Bus />
+        <Conclude />
       </div>
     );
   }
