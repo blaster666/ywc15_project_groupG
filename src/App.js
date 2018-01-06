@@ -11,8 +11,6 @@ import FilterPageResort from './Component/FilterPageResort'
 import Conclude from './Component/Conclude'
 
 
-
-
 class App extends Component {
 
   constructor(props) {
@@ -42,19 +40,19 @@ class App extends Component {
         })
   }
 
-  changeOptionSearch = value => {
+  changeOptionSearch(value){
     this.setState({ optionsearch: value });
   };
 
-  changeState = value => {
+  changeState(value){
     this.setState({ visibleState: value });
   };
 
-  changeResort = value => {
+  changeResort(value){
     this.setState({ selectedResort: value });
   };
 
-  changeBus = value => {
+  changeBus(value) {
     this.setState({ selectedBus: value });
   };
 
@@ -63,6 +61,8 @@ class App extends Component {
       <div>
         <div>
           <FirstPageTop />
+          <Button type="primary" value="2" onClick={this.changeState()}>Test</Button>
+          {this.state.visibleState}
         </div>
       </div>
     );
