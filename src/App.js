@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'antd/dist/antd.css'
 import { Button } from 'antd'
+import axios from "axios"
 
 class App extends Component {
 
@@ -24,6 +25,13 @@ class App extends Component {
     this.changeBus = this.changeBus.bind(this)
   }
 
+  componentWillMount(){
+    axios.get('https://ywc15.ywc.in.th/api/interview')
+        .then((res)=>{
+            this.setState({data:res.data})
+        })
+  }
+
   changeOptionSearch = value => {
     this.setState({ optionsearch: value });
   };
@@ -43,7 +51,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Button type="primary">Primary</Button>
+        
       </div>
     );
   }
