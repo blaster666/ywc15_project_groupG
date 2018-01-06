@@ -23,7 +23,7 @@ class Bus extends Component{
               <div style={{textAlign:"center"}}>
                 
                 <br/>
-                <h3>   บริษัทรถทัวร์ : อิอิ</h3>
+                <h3>   บริษัทรถทัวร์ : สมบัติ</h3>
                 <br/>
                 <h3>   ราคา : 10000 baht</h3>
               </div>
@@ -37,30 +37,23 @@ class Bus extends Component{
               <div >
               <Tabs defaultActiveKey="1" type="card" style={{padding: "20px"}}>
                 <TabPane tab="รายละเอียด" key="1">
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
+                    <h1>Example</h1>
+                    <h1>Example</h1>
+                    <h1>Example</h1>
+                    <h1>Example</h1>
+                    <h1>Example</h1>
+                    <h1>Example</h1>
+                    <h1>Example</h1>
                 </TabPane>
                 <TabPane tab="Review" key="2">
-                <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 2</h1>
-                    <h1>Content of Tab Pane 2</h1>
-                    <h1>Content of Tab Pane 2</h1>
-                    <h1>Content of Tab Pane 2</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
-                    <h1>Content of Tab Pane 1</h1>
+                <h1>Example</h1>
+                <h1>Example</h1>
+                <h1>Example</h1>
+                <h1>Example</h1>
+                <h1>Example</h1>
+                <h1>Example</h1>
+                <h1>Example</h1>
+                
                 </TabPane>
             </Tabs>
               </div>
