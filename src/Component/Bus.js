@@ -15,11 +15,8 @@ class Bus extends Component{
     render(){
         return(
             <div style={{backgroundColor:"white"}}>
-                <div style={{height: "10vw"}}>
-
-                </div>
               <div style={{ margin: "auto",
-                            width: "50vw",
+                            width: "100%",
                             height: '30vh',
                             backgroundColor: "orange"}}>
               </div>
@@ -32,9 +29,9 @@ class Bus extends Component{
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
                  
-              <Button type="primary" onClick={this.props.back}>Back</Button>
+              {/* <Button type="primary" onClick={this.props.back}>Back</Button>
               <span style={{color:"white"}}>asdasdasd</span>
-              <Button type="primary" onClick={this.props.next}>Select</Button>
+              <Button type="primary" onClick={this.props.next}>Select</Button> */}
                  
               </div>
               <div >

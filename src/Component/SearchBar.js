@@ -15,19 +15,9 @@ class SearchBar extends Component{
 
     render(){
         return(
-            <div style={{backgroundColor:"pink",display: 'flex', justifyContent: 'center'
+            <div style={{display: 'flex', justifyContent: 'center'
                         }}>
                 <div>
-                    <Row >
-                        
-                        <Col xs={12} sm={12} md={12} lg={3} span={3} offset={1} >
-                        <div><RadioGroup>
-                            <Radio value={1}>ที่พัก</Radio>
-                            <Radio value={2}>รถทัวร์</Radio>
-                            <Radio value={3}>ที่พัก + รถทัวร์</Radio>
-                            </RadioGroup></div></Col>
-        
-                    </Row>
                     <div style={{height:"40px"}}></div>
 
                
@@ -49,11 +39,11 @@ class SearchBar extends Component{
                         
                     </Row>
                     <div style={{height:"5vh"}}></div>
-                    <Row>
+                    {/* <Row>
                     <div style={{display: 'flex', justifyContent: 'center'}}>
                     <Button type="primary">ค้นหา</Button>
                 </div>
-                    </Row>
+                    </Row> */}
 
                     
 

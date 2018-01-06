@@ -15,9 +15,6 @@ class Resort extends Component{
         //let data = this.props.selectedResort
         return(
             <div style={{backgroundColor:"white"}}>
-                <div style={{height: "10vw"}}>
-
-                </div>
                 <Card
     cover={<img alt="example" src={map} />}
   >
@@ -35,10 +32,6 @@ class Resort extends Component{
                 <h3>   ราคาโดยเฉลี่ย: 115,000 บาท</h3>
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
-                 
-              <Button type="primary" onClick={this.props.back}>Back</Button>
-              <span style={{color:"white"}}>asdasdasd</span>
-              <Button type="primary" onClick={this.props.next}>Select</Button>
                  
               </div>
               <div >

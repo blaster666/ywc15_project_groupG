@@ -36,6 +36,7 @@ class App extends Component {
       filter_Bus_GoBack: "",//ไปกลับ ?
       filter_Bus_Number: "",//จำนวนผู้โดยสาร
       filter_Bus_Money: "",//เงิน
+      step:0
 
     };
     this.changeOptionSearch = this.changeOptionSearch.bind(this)
@@ -54,7 +55,7 @@ class App extends Component {
     this.changefilter_Bus_GoBack = this.changefilter_Bus_GoBack.bind(this)
     this.changefilter_Number = this.changefilter_Number.bind(this)
     this.changefilter_Bus_Money = this.changefilter_Bus_Money.bind(this)
-
+    this.nextStep = this.nextStep.bind(this)
 
   }
 
@@ -131,22 +132,19 @@ class App extends Component {
   changefilter_Bus_Money(value){
     this.setState({filter_Bus_Money:value})
   }
-
+  nextStep(){
+    let next = this.state.step +=1
+    this.setState({
+      step : next
+    })
+    alert('next')
+  }
   render() {
     return (
       <div>
-
-        <div style={{maxWidth:'1024px',margin:'auto'}}>
+        <div style={{margin:'auto'}}>
           <div>
-            <FirstPageTop />
-            <br />
-            <br />
-            <SearchBar1 changeBudget={this.changeBudget}
-                      
-            />
-            <SearchBar changefilter_Number={this.changefilter_Number}
-                       changefilter_Bus_date_going={this.changefilter_Bus_date_going}
-                       changefilter_Bus_GoBack={this.changefilter_Bus_GoBack}/>
+            <FirstPageTop next={this.nextStep}/>
           </div>
 
           <FilterPage />

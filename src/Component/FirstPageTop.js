@@ -1,5 +1,7 @@
 //หน้าที่ใส่ logo
 import React, { Component } from 'react'
+import SearchBar1 from './SearchBar1';
+
 class FirstPageTop extends Component{
     
     constructor(props) {
@@ -10,10 +12,11 @@ class FirstPageTop extends Component{
 
     render(){
         return(
-            <div style={{position: "relative",
-                        height: '68vh',
+            <div style={{height:'100vh',
                         backgroundColor:"red",}}>
-                First Page
+                <div style={{paddingTop:'70vh'}}>
+                    <SearchBar1 changeBudget={this.changeBudget}/>
+                </div>
             </div>
         )
     }

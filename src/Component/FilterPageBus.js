@@ -1,9 +1,31 @@
 // component หน้า bus หลัง filter
 import React, { Component } from 'react'
 import FilterBusItem from './FilterBusItem';
-import { Button } from 'antd';
+import { Button,Modal } from 'antd';
+import Bus from './Bus';
+
 class FilterPageBus extends Component{
     renderBusItem = []
+    state = { visible: false }
+    showModal = () => {
+      this.setState({
+        visible: true,
+      });
+    }
+    handleOk = (e) => {
+      console.log(e);
+      this.setState({
+        visible: false,
+      });
+      this.props.next()
+      
+    }
+    handleCancel = (e) => {
+      console.log(e);
+      this.setState({
+        visible: false,
+      });
+    }
     constructor(props) {
         super(props);
         this.state = {
@@ -47,7 +69,7 @@ class FilterPageBus extends Component{
         }
         for(let i=0;i<this.state.bus.length;i++){
             this.renderBusItem.push(
-                <FilterBusItem key={i} data={this.state.bus[i]} back={this.props.back} next={this.props.next}></FilterBusItem>
+                <FilterBusItem key={i} data={this.state.bus[i]} back={this.props.back} next={this.showModal}></FilterBusItem>
             )
         }
     }
@@ -55,9 +77,16 @@ class FilterPageBus extends Component{
     render(){
         return(
             <div style={{backgroundColor:'blue',margin:'auto'}}>
-                <Button type="primary" onClick={this.props.back}>Back</Button>
+                <Modal
+          title="รีสอร์ท..."
+          visible={this.state.visible}
+          onOk={this.handleOk}
+          onCancel={this.handleCancel}
+        >
+            <Bus/>
+        </Modal>
                 {this.renderBusItem}
-                
+                <Button type="primary" onClick={this.props.back}>Back</Button>
             </div>
         )
     }
