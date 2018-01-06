@@ -50,7 +50,6 @@ class FilterPageResort extends Component{
                 <FilterResortItem key={i} data={this.state.resorts[i]}></FilterResortItem>
             )
         }
-        console.log(14111)
     }
     
     render(){
