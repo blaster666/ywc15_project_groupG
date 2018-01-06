@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import FilterPageResort from './FilterPageResort';
 import FilterPageBus from './FilterPageBus';
+import Booking from './Booking';
 
 class FilterPage extends Component{
     constructor(props) {
@@ -10,6 +11,7 @@ class FilterPage extends Component{
         }
         this.ShowFilterPageResort = this.ShowFilterPageResort.bind(this)
         this.ShowFilterPageBus = this.ShowFilterPageBus.bind(this)
+        this.ShowBookingPage = this.ShowBookingPage.bind(this)
     }
     ShowFilterPageResort(){
         this.setState({
@@ -21,6 +23,11 @@ class FilterPage extends Component{
             ShowPage : 'bus'
         })
     }
+    ShowBookingPage(){
+        this.setState({
+            ShowPage : 'booking'
+        })
+    }
     render(){
         return(
             <div style={{
@@ -29,10 +36,13 @@ class FilterPage extends Component{
                     marginTop:'20px'
                 }}>
                 
-                <button onClick={this.ShowFilterPageResort}>Resort</button>
-                <button onClick={this.ShowFilterPageBus}>Bus</button>
+                <button onClick={this.ShowFilterPageResort}>1.Resort</button>
+                <button onClick={this.ShowFilterPageBus}>2.Bus</button>
+                <button onClick={this.ShowBookingPage}>3.Booking</button>
 
-                {this.state.ShowPage=='resort'?<FilterPageResort></FilterPageResort>:<FilterPageBus></FilterPageBus>}
+                {this.state.ShowPage=='resort'?<FilterPageResort></FilterPageResort>:
+                this.state.ShowPage=='bus'?<FilterPageBus></FilterPageBus>:
+                this.state.ShowPage=='booking'?<Booking></Booking>:''}
             </div>
         )
     }
