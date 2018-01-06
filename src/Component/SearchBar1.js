@@ -46,6 +46,8 @@ class SearchBar1 extends Component{
           visible={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
+          cancelText="ย้อนกลับ"
+          okText="ต่อไป"
         >
           <div>
             <center>
@@ -94,14 +96,14 @@ class SearchBar1 extends Component{
                 <div>
                     <div style={{width:"60%", margin:"auto"}}>
                     <center>
-                        <Input placeholder="หัวหิน" style={{width:'500px',height:'40px',margin:'auto',borderRadius:'10px'}}></Input>
+                        <Input placeholder="จังหวัด" style={{width:'500px',height:'40px',margin:'auto',borderRadius:'10px'}}></Input>
                     </center>
                     </div>
                     <br />
 
                     <div style={{width:"100%", margin:"auto"}}>
                     <center>
-                    <Input placeholder="Money" size="large" style={{width:'500px',height:'40px',margin:'auto',borderRadius:'10px'}} onChange={(e) => 
+                    <Input placeholder="งบประมาณ" size="large" style={{width:'500px',height:'40px',margin:'auto',borderRadius:'10px'}} onChange={(e) => 
                             { this.props.changeBudget(e.target.value); }}></Input>
                     </center>
                     </div>
