@@ -9,7 +9,7 @@ import Bus from './Component/Bus'
 import FilterPageBus from './Component/FilterPageBus'
 import FilterPageResort from './Component/FilterPageResort'
 import SearchBar from './Component/SearchBar';
-
+import SearchBar1 from './Component/SearchBar1';
 import FilterPage from './Component/FilterPage';
 
 class App extends Component {
@@ -131,10 +131,11 @@ class App extends Component {
   render() {
     return (
       <div>
+<<<<<<< Updated upstream
         <div style={{maxWidth:'1024px',margin:'auto'}}>
           <div>
             <FirstPageTop />
-            <SearchBar changefilter_Resort_Place={this.changefilter_Resort_Place}
+            <SearchBar1 changefilter_Resort_Place={this.changefilter_Resort_Place}
                       changefilter_Resort_Checkin={this.changefilter_Resort_Checkin}
                       changefilter_Resort_Checkout={this.changefilter_Resort_Checkout}
                       changefilter_Resort_Personal={this.changefilter_Resort_Personal}
