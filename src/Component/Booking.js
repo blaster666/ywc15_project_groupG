@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Input,Select,Checkbox } from 'antd';
+import { Input,Select,Checkbox,Button } from 'antd';
 const Option = Select.Option;
 class Booking extends Component{
     
@@ -54,6 +54,8 @@ class Booking extends Component{
                         <h3>รีสอร์ท xxx</h3>
                     </div>
                 </div>
+                <Button type="primary" onClick={this.props.back}>Back</Button>
+                <Button type="primary" onClick={this.props.next} style={{marginLeft:'30px',width:'80%'}}>Submit</Button>
             </div>
         )
     }

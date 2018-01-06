@@ -63,11 +63,12 @@ class FilterPage extends Component{
                 <button onClick={this.ShowBookingPage}>3.Booking</button>
                 <button onClick={this.ShowConcludePage}>4.Conclude</button>
 
-                {this.state.ShowPage=='resort'?<FilterPageResort></FilterPageResort>:
-                this.state.ShowPage=='Aresort'?<Resort/>:
-                this.state.ShowPage=='bus'?<FilterPageBus></FilterPageBus>:
-                this.state.ShowPage=='Abus'?<Bus/>:
-                this.state.ShowPage=='booking'?<Booking></Booking>:<Conclude/>}
+                {this.state.ShowPage=='resort'?<FilterPageResort next={this.ShowAresortPage}/>:
+                this.state.ShowPage=='Aresort'?<Resort back={this.ShowFilterPageResort} next={this.ShowFilterPageBus}/>:
+                this.state.ShowPage=='bus'?<FilterPageBus back={this.ShowAresortPage} next={this.ShowAbusPage}/>:
+                this.state.ShowPage=='Abus'?<Bus back={this.ShowFilterPageBus} next={this.ShowBookingPage}/>:
+                this.state.ShowPage=='booking'?<Booking back={this.ShowAbusPage} next={this.ShowConcludePage}/>:
+                this.state.ShowPage=='conclude'?<Conclude back={this.ShowBookingPage}/>: ''}
             </div>
         )
     }

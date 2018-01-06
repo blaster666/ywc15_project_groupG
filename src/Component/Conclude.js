@@ -27,7 +27,7 @@ class Conclude extends Component{
                     
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <Button type="primary">Finish !!</Button>
+                    {/* <Button type="primary">Finish !!</Button> */}
                 </div>
             </div>
         )

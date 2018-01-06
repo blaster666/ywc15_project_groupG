@@ -36,9 +36,9 @@ class Resort extends Component{
               </div>
               <div style={{display: 'flex', justifyContent: 'center'}}>
                  
-              <Button type="primary">Back</Button>
+              <Button type="primary" onClick={this.props.back}>Back</Button>
               <span style={{color:"white"}}>asdasdasd</span>
-              <Button type="primary">Select</Button>
+              <Button type="primary" onClick={this.props.next}>Select</Button>
                  
               </div>
               <div >

@@ -15,7 +15,7 @@ class FilterResortItem extends Component{
                 width:'calc( 100% - 60px)',
                 height:'200px',
                 margin:'10px auto',
-                }}>
+                }} onClick={this.props.next}>
                 
                 
                 <div style={{

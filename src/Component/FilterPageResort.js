@@ -1,6 +1,7 @@
 // component หน้า resort หลัง filter
 import React, { Component } from 'react'
 import FilterResortItem from './FilterResortItem';
+import { Button } from 'antd';
 class FilterPageResort extends Component{
     renderResortItem = []
     constructor(props) {
@@ -47,7 +48,7 @@ class FilterPageResort extends Component{
 
         for(let i=0;i<this.state.resorts.length;i++){
             this.renderResortItem.push(
-                <FilterResortItem key={i} data={this.state.resorts[i]}></FilterResortItem>
+                <FilterResortItem key={i} data={this.state.resorts[i]} next={this.props.next}></FilterResortItem>
             )
         }
     }
