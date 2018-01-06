@@ -4,13 +4,18 @@ class FirstPageTop extends Component{
     
     constructor(props) {
         super(props);
-  
+        
 
       }
 
     render(){
         return(
-            <div></div>
+            <div style={{position: "relative",
+                        width: "100vw",
+                        height: '80vh',
+                        backgroundColor:"red",}}>
+                First Page
+            </div>
         )
     }
 

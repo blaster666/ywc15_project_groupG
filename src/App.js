@@ -3,6 +3,16 @@ import 'antd/dist/antd.css'
 import { Button } from 'antd'
 import axios from "axios"
 
+import FirstPageTop from './Component/FirstPageTop'
+import Resort from './Component/Resort'
+import Bus from './Component/Bus'
+import FilterPageBus from './Component/FilterPageBus'
+import FilterPageResort from './Component/FilterPageResort'
+import Conclude from './Component/Conclude'
+
+
+
+
 class App extends Component {
 
   constructor(props) {
@@ -50,8 +60,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        
+      <div>
+        <div>
+          <FirstPageTop />
+        </div>
       </div>
     );
   }
