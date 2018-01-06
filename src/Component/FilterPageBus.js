@@ -69,7 +69,7 @@ class FilterPageBus extends Component{
         }
         for(let i=0;i<this.state.bus.length;i++){
             this.renderBusItem.push(
-                <FilterBusItem key={i} data={this.state.bus[i]} back={this.props.back} next={this.showModal}></FilterBusItem>
+                <FilterBusItem key={i} data={this.state.bus[i]} back={this.props.back} next={this.showModal} next2={this.props.next2}></FilterBusItem>
             )
         }
     }
