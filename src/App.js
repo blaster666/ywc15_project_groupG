@@ -20,8 +20,8 @@ class App extends Component {
     this.state = {
       data: "", //ข้อมูลทั้ง resort และ bus ที่ axios get มา
       optionsearch: "", //เลือกว่าจะเอา bus, resort, resort+bus
-      selectedResort: "", //เลือกว่าจะเอา resort ไหน
-      selectedBus: "", // เลือกว่าจะเอา bus ไหน
+      selectedResort: "Resort บ้านทรายทอง", //เลือกว่าจะเอา resort ไหน
+      selectedBus: "Bus อะไรก็ไม่รู้", // เลือกว่าจะเอา bus ไหน
       visibleState: 0, //0 = หน้าแรกก่อน search , 
                        //1 = ขึ้นหน้า filter หลังกด search, 
                        //2 = show resort ที่ select, 
@@ -148,7 +148,8 @@ class App extends Component {
           />
         </div>
 
-        <FilterPage />
+        
+        <Resort />
       </div>
     );
   }

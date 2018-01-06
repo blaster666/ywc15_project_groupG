@@ -12,7 +12,7 @@ class SearchBar extends Component{
         return(
             <div style={{backgroundColor:"pink",
                         width: "100vw",
-                        height: '30vh',}}>
+                        height: '32vh',}}>
                 <div>
                     <Checkbox>ที่พัก</Checkbox>
                     <Row >
@@ -60,7 +60,7 @@ class SearchBar extends Component{
                             { this.props.changefilter_Bus_Number(e.target.value); }}/></Col>
                         
                     </Row>
-                    
+                    <div style={{height:"1vh"}}></div>
                     <Row>
                         <Col span={3} offset={1}><Button type="primary">Search</Button></Col>
 

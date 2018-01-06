@@ -12,7 +12,7 @@ class FirstPageTop extends Component{
         return(
             <div style={{position: "relative",
                         width: "100vw",
-                        height: '70vh',
+                        height: '68vh',
                         backgroundColor:"red",}}>
                 First Page
             </div>
