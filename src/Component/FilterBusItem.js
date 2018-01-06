@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Button,Modal } from 'antd';
+
 class FilterBusItem extends Component{
     componentWillReceiveProps(nextProps) {
         this.forceUpdate();
@@ -10,7 +12,6 @@ class FilterBusItem extends Component{
     render(){
         return(
             <div style={{
-                border:'1px solid black',
                 backgroundColor:'white',
                 width:'100%',
                 height:'200px',
@@ -24,14 +25,20 @@ class FilterBusItem extends Component{
                     height:'198px',
                     display:'inline-block'
                     }}>
-                    Picture
+                    {this.props.data.name}
                 </div>
                 <div style={{
                     backgroundColor:'pink',
                     width:'69%',
                     height:'198px',
                     display:'inline-block'
-                    }}>{this.props.data.name}</div>
+                    }}>
+                    <div>
+                        {this.props.data.name}
+                        <Button>ดูรายละเอียด</Button>
+                        <Button type="primary" onClick={this.props.next2}>จองที่พักนี้</Button>
+                    </div>
+                </div>
             </div>
         )
     }

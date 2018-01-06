@@ -29,23 +29,23 @@ class FilterPageResort extends Component{
         super(props);
         this.state={
             resorts : [{
-                name:'asdasdasd',
-                a:'asdasdasd',
-                b:'asdasdasd'
+                name:'เคียงทะเล',
+                img0:'resort1-1.jpg',
+                img:['resort1-1.jpg','resort1-2.jpg','resort1-3.jpg']
             },{
-                name:'kkkkkk',
-                a:'kkkkkk',
-                b:'kkkkkk'
+                name:'บ้านรักทะเล',
+                img0:'resort2-1.jpg',
+                img:['resort2-1.jpg','resort2-2.jpg','resort2-3.jpg']
             },{
-                name:'llllllll',
-                a:'llllllll',
-                b:'llllllll'
+                name:'พาราไดซ์',
+                img0:'resort3-1.jpg',
+                img:['resort3-1.jpg']
             }]
         }
 
         for(let i=0;i<this.state.resorts.length;i++){
             this.renderResortItem.push(
-                <FilterResortItem key={i} data={this.state.resorts[i]} next={this.showModal}></FilterResortItem>
+                <FilterResortItem key={i} data={this.state.resorts[i]} next={this.showModal} next2={this.props.next2}></FilterResortItem>
             )
         }
     }

@@ -53,7 +53,9 @@ class FilterPage extends Component{
     render(){
         return(
             <div className="FilterPage" style={{
-                    marginTop:'20px'
+                    marginTop:'20px',
+                    maxWidth:'1020px',
+                    margin:'auto'
                 }}>
                 
                 <Button type={this.state.ShowPage=='resort'?"primary":''} onClick={this.ShowFilterPageResort} >ที่พักที่เหมาะกับคุณ</Button>
@@ -67,9 +69,9 @@ class FilterPage extends Component{
                 <hr style={{marginTop:'1px'}}/>
                 
 
-                {this.state.ShowPage=='resort'?<FilterPageResort next={this.ShowFilterPageBus}/>:
+                {this.state.ShowPage=='resort'?<FilterPageResort next={this.ShowFilterPageBus} next2={this.ShowFilterPageBus}/>:
                 this.state.ShowPage=='Aresort'?<Resort back={this.ShowFilterPageResort} next={this.ShowFilterPageBus}/>:
-                this.state.ShowPage=='bus'?<FilterPageBus back={this.ShowFilterPageResort} next={this.ShowBookingPage}/>:
+                this.state.ShowPage=='bus'?<FilterPageBus back={this.ShowFilterPageResort} next={this.ShowBookingPage} next2={this.ShowBookingPage}/>:
                 this.state.ShowPage=='Abus'?<Bus back={this.ShowFilterPageBus} next={this.ShowBookingPage}/>:
                 this.state.ShowPage=='booking'?<Booking back={this.ShowAbusPage} next={this.ShowConcludePage}/>:
                 this.state.ShowPage=='conclude'?<Conclude back={this.ShowBookingPage}/>: ''}
