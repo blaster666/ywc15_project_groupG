@@ -8,7 +8,6 @@ import Resort from './Component/Resort'
 import Bus from './Component/Bus'
 import FilterPageBus from './Component/FilterPageBus'
 import FilterPageResort from './Component/FilterPageResort'
-import Conclude from './Component/Conclude'
 import SearchBar from './Component/SearchBar';
 import SearchBar1 from './Component/SearchBar1';
 import FilterPage from './Component/FilterPage';
@@ -155,7 +154,6 @@ class App extends Component {
           <FilterPage />
           <Resort />
           <Bus />
-          <Conclude />
         </div>
       </div>
     );
