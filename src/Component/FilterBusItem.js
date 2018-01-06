@@ -30,16 +30,16 @@ class FilterBusItem extends Component{
                     <img src={this.filename} width="100%" height="100%"></img>
                 </div>
                 <div style={{
-                    backgroundColor:'pink',
                     width:'69%',
                     height:'198px',
                     display:'inline-block',
                     
                     }}>
+                    <h2 style={{marginLeft:'30px',marginTop:'20px'}}>{this.props.data.name}</h2>
                     <div style={{marginLeft:'20px'}}>
-                        {this.props.data.name}
                         <Button>ดูรายละเอียด</Button>
-                        <Button type="primary" onClick={this.props.next2}>จองที่พักนี้</Button>
+                        {/* <Button type="primary" onClick={this.props.next2}>จองที่พักนี้</Button> */}
+                        <button style={{marginLeft:'20px',border:'0',borderRadius:'10px',backgroundColor:'#ffcc33',color:'000000'}} onClick={this.props.next2}>จองรถทัวร์</button>
                     </div>
                 </div>
             </div>

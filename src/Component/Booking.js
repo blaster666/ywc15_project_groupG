@@ -41,7 +41,7 @@ class Booking extends Component{
                     </div>
                     <div style={{border:'1px solid #e2e2e2',margin:'auto'}}>
                         <h2>นโยบายการจอง</h2>
-                        <p>alsjhdjkasdhjkasdhjkasdhjkasdhjkasdhajskdhajskdhjaksdhjkasdhjkashdjkahsd</p>
+                        <p>ไทยแลนด์ 4.0” เป็นวิสัยทัศน์เชิงนโยบายการพัฒนาเศรษฐกิจของประเทศไทย หรือ โมเดลพัฒนาเศรษฐกิจของรัฐบาล ภายใต้การนำของพลเอกประยุทธ์ จันทร์โอชา นายกรัฐมนตรีและหัวหน้าคณะรักษาความสงบแห่งชาติ (คสช.) ที่เข้ามาบริหารประเทศบนวิสัยทัศน์ที่ ว่า “มั่นคง มั่งคั่ง และยั่งยืน” ที่มีภารกิจสำคัญในการขับเคลื่อนปฏิรูปประเทศด้านต่าง ๆ เพื่อปรับแก้</p>
                     </div>
                     <div style={{border:'1px solid #e2e2e2',margin:'auto'}}>
                         <h2>รายละเอียดราคา</h2>
@@ -51,7 +51,9 @@ class Booking extends Component{
                 <div style={{width:'40%',display:'inline-block',padding:'20px',marginTop:'0'}}>
                     <div style={{border:'1px solid #e2e2e2',margin:'auto'}}>
                         <h2>รายละเอียดการจอง</h2>
-                        <h3>รีสอร์ท xxx</h3>
+                        <h3>รีสอร์ท สกายไดร์ซ</h3>
+                        <p>ราคา(บาท) : 40,000 </p>
+                        <p>จำนวน(คน) : 120 </p>
                     </div>
                 </div>
                 {/* <Button type="primary" onClick={this.props.back}>Back</Button> */}

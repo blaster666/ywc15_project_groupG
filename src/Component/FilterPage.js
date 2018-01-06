@@ -60,7 +60,7 @@ class FilterPage extends Component{
                 
                 <Button type={this.state.ShowPage=='resort'?"primary":''} onClick={this.ShowFilterPageResort} >ที่พักที่เหมาะกับคุณ</Button>
                 {/* <Button type={this.state.ShowPage==''?"primary":''} onClick={this.ShowAresortPage}>1.A Resort</Button> */}
-                <Button type={this.state.ShowPage=='bus'?"primary":''} onClick={this.ShowFilterPageBus}>รถบัส</Button>
+                <Button type={this.state.ShowPage=='bus'?"primary":''} onClick={this.ShowFilterPageBus}>รถทัวร์</Button>
                 {/* <Button type={this.state.ShowPage==''?"primary":''} onClick={this.ShowAbusPage}>2.5.A Bus</Button> */}
                 <Button type={this.state.ShowPage=='booking'?"primary":''} onClick={this.ShowBookingPage}>ยืนยันการจอง</Button>
                 <Button type={this.state.ShowPage=='conclude'?"primary":''} onClick={this.ShowConcludePage}>เสร็จสมบูรณ์</Button>
