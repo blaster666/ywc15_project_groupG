@@ -6,6 +6,7 @@ import Conclude from './Conclude';
 import { Button,Modal } from 'antd';
 import Resort from './Resort';
 import Bus from './Bus';
+import Fav from './Fav';
 
 class FilterPage extends Component{
     constructor(props) {
@@ -19,6 +20,7 @@ class FilterPage extends Component{
         this.ShowConcludePage = this.ShowConcludePage.bind(this)
         this.ShowAresortPage = this.ShowAresortPage.bind(this)
         this.ShowAbusPage = this.ShowAbusPage.bind(this)
+        this.ShowFav = this.ShowFav.bind(this)
     }
     ShowFilterPageResort(){
         this.setState({
@@ -50,6 +52,11 @@ class FilterPage extends Component{
             ShowPage : 'Abus'
         })
     }
+    ShowFav(){
+        this.setState({
+            ShowPage : 'fav'
+        })
+    }
     render(){
         return(
             <div className="FilterPage" style={{
@@ -79,7 +86,7 @@ class FilterPage extends Component{
                 }
                 
                 
-                <Button type="danger" style={{width:'70px',float:'right'}}>ที่ถูกใจ</Button>
+                <Button type="danger" style={{width:'70px',float:'right'}} onClick={this.ShowFav}>ที่ถูกใจ</Button>
                 <hr style={{marginTop:'1px'}}/>
                 
 
@@ -88,7 +95,8 @@ class FilterPage extends Component{
                 this.state.ShowPage=='bus'?<FilterPageBus back={this.ShowFilterPageResort} next={this.ShowBookingPage} next2={this.ShowBookingPage}/>:
                 this.state.ShowPage=='Abus'?<Bus back={this.ShowFilterPageBus} next={this.ShowBookingPage}/>:
                 this.state.ShowPage=='booking'?<Booking back={this.ShowAbusPage} next={this.ShowConcludePage}/>:
-                this.state.ShowPage=='conclude'?<Conclude back={this.ShowBookingPage}/>: ''}
+                this.state.ShowPage=='conclude'?<Conclude back={this.ShowBookingPage}/>: 
+                this.state.ShowPage=='fav'?<Fav next={this.ShowBookingPage}/>: ''}
 
 {this.state.ShowPage=='conclude'?<Button type="primary" style={{width:'100%',marginTop:'20px'}}>กลับสู่หน้าแรก</Button>:''}
                 

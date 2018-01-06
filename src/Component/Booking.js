@@ -25,8 +25,9 @@ class Booking extends Component{
     render(){
         return(
             <div style={{margin:'auto'}}>
-                <div style={{width:'60%',display:'inline-block'}}>
+                <div style={{width:'60%',margin:'0 auto'}}>
                     <div style={{margin:'auto',}}>
+                    <br/>
                         ชื่อผู้จอง
                         <Input placeholder="Udomsub Naikorn"/>
                         <br/>
