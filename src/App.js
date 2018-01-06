@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import 'antd/dist/antd.css'
+import { Button } from 'antd'
 
 class App extends Component {
 
@@ -17,12 +18,32 @@ class App extends Component {
                        //4 = conclude,
 
     };
+    this.changeOptionSearch = this.changeOptionSearch.bind(this)
+    this.changeState = this.changeState.bind(this)
+    this.changeResort = this.changeResort.bind(this)
+    this.changeBus = this.changeBus.bind(this)
   }
+
+  changeOptionSearch = value => {
+    this.setState({ optionsearch: value });
+  };
+
+  changeState = value => {
+    this.setState({ visibleState: value });
+  };
+
+  changeResort = value => {
+    this.setState({ selectedResort: value });
+  };
+
+  changeBus = value => {
+    this.setState({ selectedBus: value });
+  };
 
   render() {
     return (
       <div className="App">
-        Test Web
+        <Button type="primary">Primary</Button>
       </div>
     );
   }
