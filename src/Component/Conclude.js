@@ -12,7 +12,7 @@ class Conclude extends Component{
 
     render(){
         return(
-            <div style={{backgroundColor:"lightblue",color:"black", }}>
+            <div style={{color:"black", }}>
                 <div style={{textAlign:"center"}}>
                     <h1>ตรวจสอบการจองของคุณ</h1>
                     <h3>เช็คอิน : 12-10-2560</h3>

@@ -63,15 +63,11 @@ class FilterPage extends Component{
                 }
                 
                 {/* <Button type={this.state.ShowPage==''?"primary":''} onClick={this.ShowAresortPage}>1.A Resort</Button> */}
-<<<<<<< HEAD
-                <Button type={this.state.ShowPage=='bus'?"primary":''} onClick={this.ShowFilterPageBus}>รถทัวร์</Button>
-=======
                 {this.state.ShowPage=='bus'?
                  <button style={{border:"0",borderRadius:"0px 10px 0px 0px", backgroundColor:"#ffcc33", color:"000000"}}  onClick={this.ShowFilterPageBus}>รถบัส</button>:
                  <button style={{border:"0",borderRadius:"0px 10px 0px 0px", backgroundColor:"#ccc", color:"000000"}}  onClick={this.ShowFilterPageBus}>รถบัส</button>
                 }
-                
->>>>>>> 7b5707439c34496a5e854f190e932212e64a2f87
+
                 {/* <Button type={this.state.ShowPage==''?"primary":''} onClick={this.ShowAbusPage}>2.5.A Bus</Button> */}
                 {this.state.ShowPage=='booking'?
                    <button style={{border:"0",borderRadius:"0px 10px 0px 0px", backgroundColor:"#ffcc33", color:"000000"}} onClick={this.ShowBookingPage}>ยืนยันการจอง</button> :
