@@ -47,7 +47,7 @@ class FilterPageResort extends Component{
 
         for(let i=0;i<this.state.resorts.length;i++){
             this.renderResortItem.push(
-                <FilterResortItem key={this.state.resorts[i].name} data={this.state.resorts[i]}></FilterResortItem>
+                <FilterResortItem key={i} data={this.state.resorts[i]}></FilterResortItem>
             )
         }
         console.log(14111)

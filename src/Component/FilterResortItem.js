@@ -10,9 +10,9 @@ class FilterResortItem extends Component{
     render(){
         return(
             <div style={{
-                backgroundColor:'black',width:'150px',height:'100px',display:'inline-block',marginLeft:'20px'
+                border:'1px solid black',backgroundColor:'white',width:'150px',height:'100px',display:'inline-block',marginLeft:'20px'
                 }}>
-                
+                {this.props.data.name}
             </div>
         )
     }

@@ -26,6 +26,7 @@ class FilterPage extends Component{
             <div style={{
                     backgroundColor:"yellow",  
                     width: "100vw",
+                    marginTop:'20px'
                 }}>
                 
                 <button onClick={this.ShowFilterPageResort}>Resort</button>
