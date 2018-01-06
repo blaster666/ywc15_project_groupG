@@ -2,11 +2,13 @@ import React, { Component } from 'react'
 import { Button,Modal } from 'antd';
 
 class FilterBusItem extends Component{
+    filename=""
     componentWillReceiveProps(nextProps) {
         this.forceUpdate();
     }
     constructor(props) {
         super(props);
+        this.filename = 'img/'+this.props.data.img;
     }
 
     render(){
@@ -21,20 +23,20 @@ class FilterBusItem extends Component{
                 
                 
                 <div style={{
-                    backgroundColor:'blue',
                     width:'30%',
-                    height:'198px',
-                    display:'inline-block'
+                    height:'100%',
+                    display:'inline-block',
                     }}>
-                    {this.props.data.name}
+                    <img src={this.filename} width="100%" height="100%"></img>
                 </div>
                 <div style={{
                     backgroundColor:'pink',
                     width:'69%',
                     height:'198px',
-                    display:'inline-block'
+                    display:'inline-block',
+                    
                     }}>
-                    <div>
+                    <div style={{marginLeft:'20px'}}>
                         {this.props.data.name}
                         <Button>ดูรายละเอียด</Button>
                         <Button type="primary" onClick={this.props.next2}>จองที่พักนี้</Button>
