@@ -9,7 +9,9 @@ class FilterPageBus extends Component{
 
     render(){
         return(
-            <div></div>
+            <div style={{backgroundColor:'blue',width:'900px',height:'500px',margin:'auto'}}>
+                FilterPageBus
+            </div>
         )
     }
 

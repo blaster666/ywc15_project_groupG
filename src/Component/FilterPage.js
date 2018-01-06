@@ -13,7 +13,6 @@ class FilterPage extends Component{
             <div style={{
                 backgroundColor:"yellow",  
                 width: "100vw",
-                height: '500px',
                 }}>
                 
                 <FilterPageBus></FilterPageBus>

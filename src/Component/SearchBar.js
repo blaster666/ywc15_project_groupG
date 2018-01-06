@@ -8,7 +8,7 @@ class SearchBar extends Component{
 
     render(){
         return(
-            <div style={{color:red}}>
+            <div style={{color:'red'}}>
                 <div>Filter</div>
             </div>
         )
