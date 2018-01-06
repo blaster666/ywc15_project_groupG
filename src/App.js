@@ -24,6 +24,7 @@ class App extends Component {
                        //2 = show resort ที่ select, 
                        //3 = show bus,
                        //4 = conclude,
+      filterBudget: "",
       filter_Resort_Place: "", //สถานที่
       filter_Resort_Checkin: "", //เช็คอิน
       filter_Resort_Checkout: "", //เช็คเอ้าท์
@@ -39,6 +40,7 @@ class App extends Component {
     };
     this.changeOptionSearch = this.changeOptionSearch.bind(this)
     this.changeState = this.changeState.bind(this)
+    this.changeBudget = this.changeBudget.bind(this)
     this.changeResort = this.changeResort.bind(this)
     this.changeBus = this.changeBus.bind(this)
     this.changefilter_Resort_Place = this.changefilter_Resort_Place.bind(this)
@@ -50,7 +52,7 @@ class App extends Component {
     this.changefilter_Bus_to = this.changefilter_Bus_to.bind(this)
     this.changefilter_Bus_date_going = this.changefilter_Bus_date_going.bind(this)
     this.changefilter_Bus_GoBack = this.changefilter_Bus_GoBack.bind(this)
-    this.changefilter_Bus_Number = this.changefilter_Bus_Number.bind(this)
+    this.changefilter_Number = this.changefilter_Number.bind(this)
     this.changefilter_Bus_Money = this.changefilter_Bus_Money.bind(this)
 
 
@@ -64,6 +66,10 @@ class App extends Component {
   // }
   getData(value){
     this.setState({data:value})
+  }
+
+  changeBudget(value){
+    this.setState({Budget:value})
   }
 
   changeOptionSearch(value){
@@ -118,8 +124,8 @@ class App extends Component {
     this.setState({filter_Bus_GoBack:value})
   }
 
-  changefilter_Bus_Number(value){
-    this.setState({filter_Bus_Number:value})
+  changefilter_Number(value){
+    this.setState({filter_Number:value})
   }
 
   changefilter_Bus_Money(value){
@@ -135,18 +141,12 @@ class App extends Component {
             <FirstPageTop />
             <br />
             <br />
-            <SearchBar1 changefilter_Resort_Place={this.changefilter_Resort_Place}
-                      changefilter_Resort_Checkin={this.changefilter_Resort_Checkin}
-                      changefilter_Resort_Checkout={this.changefilter_Resort_Checkout}
-                      changefilter_Resort_Personal={this.changefilter_Resort_Personal}
-                      changefilter_Resort_Money={this.changefilter_Resort_Money}
-                      changefilter_Bus_from={this.changefilter_Bus_from}
-                      changefilter_Bus_to={this.changefilter_Bus_to}
-                      changefilter_Bus_date_going={this.changefilter_Bus_date_going}
-                      changefilter_Bus_GoBack={this.changefilter_Bus_GoBack}
-                      changefilter_Bus_Number={this.changefilter_Bus_Number}
-                      changefilter_Bus_Money={this.changefilter_Bus_Money}
+            <SearchBar1 changeBudget={this.changeBudget}
+                      
             />
+            <SearchBar changefilter_Number={this.changefilter_Number}
+                       changefilter_Bus_date_going={this.changefilter_Bus_date_going}
+                       changefilter_Bus_GoBack={this.changefilter_Bus_GoBack}/>
           </div>
 
           <FilterPage />
