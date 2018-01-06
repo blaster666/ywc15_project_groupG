@@ -11,6 +11,7 @@ import FilterPageResort from './Component/FilterPageResort'
 import Conclude from './Component/Conclude'
 import SearchBar from './Component/SearchBar';
 
+import FilterPage from './Component/FilterPage';
 
 class App extends Component {
 
@@ -77,6 +78,7 @@ class App extends Component {
                      changeOptionSearch = {this.changeOptionSearch}
                      changeFilter/>
         </div>
+        <FilterPage></FilterPage>
       </div>
     );
   }
