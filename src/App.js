@@ -142,7 +142,7 @@ class App extends Component {
             <br />
             <br />
             <SearchBar1 changeBudget={this.changeBudget}
-                      
+                        change
             />
             <SearchBar changefilter_Number={this.changefilter_Number}
                        changefilter_Bus_date_going={this.changefilter_Bus_date_going}
