@@ -132,10 +132,12 @@ class App extends Component {
   render() {
     return (
       <div>
-<<<<<<< Updated upstream
+
         <div style={{maxWidth:'1024px',margin:'auto'}}>
           <div>
             <FirstPageTop />
+            <br />
+            <br />
             <SearchBar1 changefilter_Resort_Place={this.changefilter_Resort_Place}
                       changefilter_Resort_Checkin={this.changefilter_Resort_Checkin}
                       changefilter_Resort_Checkout={this.changefilter_Resort_Checkout}
