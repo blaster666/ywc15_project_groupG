@@ -54,6 +54,7 @@ class FilterPageBus extends Component{
     render(){
         return(
             <div style={{backgroundColor:'blue',width:'900px',margin:'auto'}}>
+                FilterPageBus
                 {this.renderBusItem}
             </div>
         )
