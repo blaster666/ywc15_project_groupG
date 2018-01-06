@@ -57,13 +57,31 @@ class FilterPage extends Component{
                     maxWidth:'1020px',
                     margin:'auto'
                 }}>
+                {this.state.ShowPage=='resort'?
+                 <button style={{border:"0",borderRadius:"10px 10px 0px 0px", backgroundColor:"#ffcc33", color:"000000"}}  onClick={this.ShowFilterPageResort} >ที่พักที่เหมาะกับคุณ</button>:
+                 <button style={{border:"0",borderRadius:"10px 10px 0px 0px", backgroundColor:"#ccc", color:"000000"}}  onClick={this.ShowFilterPageResort} >ที่พักที่เหมาะกับคุณ</button>
+                }
                 
-                <Button type={this.state.ShowPage=='resort'?"primary":''} onClick={this.ShowFilterPageResort} >ที่พักที่เหมาะกับคุณ</Button>
                 {/* <Button type={this.state.ShowPage==''?"primary":''} onClick={this.ShowAresortPage}>1.A Resort</Button> */}
+<<<<<<< HEAD
                 <Button type={this.state.ShowPage=='bus'?"primary":''} onClick={this.ShowFilterPageBus}>รถทัวร์</Button>
+=======
+                {this.state.ShowPage=='bus'?
+                 <button style={{border:"0",borderRadius:"0px 10px 0px 0px", backgroundColor:"#ffcc33", color:"000000"}}  onClick={this.ShowFilterPageBus}>รถบัส</button>:
+                 <button style={{border:"0",borderRadius:"0px 10px 0px 0px", backgroundColor:"#ccc", color:"000000"}}  onClick={this.ShowFilterPageBus}>รถบัส</button>
+                }
+                
+>>>>>>> 7b5707439c34496a5e854f190e932212e64a2f87
                 {/* <Button type={this.state.ShowPage==''?"primary":''} onClick={this.ShowAbusPage}>2.5.A Bus</Button> */}
-                <Button type={this.state.ShowPage=='booking'?"primary":''} onClick={this.ShowBookingPage}>ยืนยันการจอง</Button>
-                <Button type={this.state.ShowPage=='conclude'?"primary":''} onClick={this.ShowConcludePage}>เสร็จสมบูรณ์</Button>
+                {this.state.ShowPage=='booking'?
+                   <button style={{border:"0",borderRadius:"0px 10px 0px 0px", backgroundColor:"#ffcc33", color:"000000"}} onClick={this.ShowBookingPage}>ยืนยันการจอง</button> :
+                   <button style={{border:"0",borderRadius:"0px 10px 0px 0px", backgroundColor:"#ccc", color:"000000"}} onClick={this.ShowBookingPage}>ยืนยันการจอง</button>
+                }
+                {this.state.ShowPage=='conclude'?
+                  <button style={{border:"0",borderRadius:"0px 10px 0px 0px", backgroundColor:"#ffcc33", color:"000000"}} onClick={this.ShowConcludePage}>เสร็จสมบูรณ์</button> :
+                  <button style={{border:"0",borderRadius:"0px 10px 0px 0px", backgroundColor:"#ccc", color:"000000"}} onClick={this.ShowConcludePage}>เสร็จสมบูรณ์</button>
+                }
+                
                 
                 <Button type="danger" style={{width:'70px',float:'right'}}>ที่ถูกใจ</Button>
                 <hr style={{marginTop:'1px'}}/>
