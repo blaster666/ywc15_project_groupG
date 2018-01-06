@@ -12,10 +12,11 @@ class FilterBusItem extends Component{
     render(){
         return(
             <div style={{
-                backgroundColor:'white',
                 width:'100%',
                 height:'200px',
                 margin:'10px auto',
+                boxShadow: '1px 3px 3px rgba(0,0,0,0.2)',
+                borderRadius: '10px'
                 }} onClick={this.props.next}>
                 
                 
