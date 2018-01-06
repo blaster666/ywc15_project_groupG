@@ -30,41 +30,15 @@ class FilterPageBus extends Component{
         super(props);
         this.state = {
             bus : [{
-                name:'aaaaaaaaaaaaaaaa',
-                a:'aaaaaaaaaaaaaaaa',
-                b:'aaaaaaaaaaaaaaaa'
+                name:'สุรศักดิ์',
+                img:'bus1-1.png',
+                
             },{
-                name:'aaaaaaaaaaaaaaaa',
-                a:'aaaaaaaaaaaaaaaa',
-                b:'aaaaaaaaaaaaaaaa'
+                name:'ตะวันคลับ',
+                img:'bus2.jpg',
             },{
-                name:'llllllll',
-                a:'llllllll',
-                b:'llllllll'
-            },{
-                name:'aaaaaaaaaaaaaaaa',
-                a:'aaaaaaaaaaaaaaaa',
-                b:'aaaaaaaaaaaaaaaa'
-            },{
-                name:'aaaaaaaaaaaaaaaa',
-                a:'aaaaaaaaaaaaaaaa',
-                b:'aaaaaaaaaaaaaaaa'
-            },{
-                name:'llllllll',
-                a:'llllllll',
-                b:'llllllll'
-            },{
-                name:'aaaaaaaaaaaaaaaa',
-                a:'aaaaaaaaaaaaaaaa',
-                b:'aaaaaaaaaaaaaaaa'
-            },{
-                name:'aaaaaaaaaaaaaaaa',
-                a:'aaaaaaaaaaaaaaaa',
-                b:'aaaaaaaaaaaaaaaa'
-            },{
-                name:'aaaaaaaaaaaaaaaa',
-                a:'aaaaaaaaaaaaaaaa',
-                b:'aaaaaaaaaaaaaaaa'
+                name:'คอนเฟิร์มทัวร์',
+                img:'bus3.png',
             }]
         }
         for(let i=0;i<this.state.bus.length;i++){

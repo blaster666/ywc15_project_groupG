@@ -15,7 +15,9 @@ class FirstPageTop extends Component{
                         backgroundImage:'url(img/landing.jpg)',
                         backgroundSize:'cover',
                         marginLeft:'-10px'}}>
-                <div style={{paddingTop:'70vh'}}>
+                <center><img src="img/logo.png" width="180px" style={{paddingTop:'30vh'}}></img></center>
+                <center><h2 style={{color:'white',paddingTop:'30px'}}>จัดค่ายที่ไหนดี ? - มีงบเท่าไหร่ ?</h2></center>
+                <div style={{paddingTop:'30px'}}>
                     <SearchBar1 changeBudget={this.changeBudget} nextPage={this.props.nextPage}/>
                 </div>
             </div>
