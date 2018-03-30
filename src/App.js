@@ -36,7 +36,8 @@ class App extends Component {
       filter_Bus_GoBack: "",//ไปกลับ ?
       filter_Bus_Number: "",//จำนวนผู้โดยสาร
       filter_Bus_Money: "",//เงิน
-      step:0
+      step:0,
+      Budget: null
 
     };
     this.changeOptionSearch = this.changeOptionSearch.bind(this)
@@ -150,7 +151,7 @@ class App extends Component {
       <div>
         <div style={{margin:'auto'}}>
           <div>
-            {this.state.step==0?<FirstPageTop next={this.nextStep} nextPage={this.nextPage}/>:""}
+            {this.state.step==0?<FirstPageTop changeBudget={this.changeBudget} next={this.nextStep} nextPage={this.nextPage}/>:""}
 
           </div>
           {this.state.step == 1?<FilterPage />:''}
