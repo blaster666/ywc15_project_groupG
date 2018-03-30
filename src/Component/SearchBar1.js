@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, Row, Col, Input, Button, Icon, Checkbox,Modal } from 'antd';
+import { Input, Checkbox,Modal } from 'antd';
 import { Select } from 'antd';
 import SearchBar from './SearchBar';
 
@@ -102,7 +102,7 @@ class SearchBar1 extends Component{
                     <div style={{width:"100%", margin:"auto"}}>
                     <center>
                     <Input placeholder="Money" size="large" style={{width:'500px',height:'40px',margin:'auto',borderRadius:'10px'}} onChange={(e) => 
-                            { this.props.changeBudget(e.target.value); }}></Input>
+                            { () => this.props.changeBudget(e.target.value) }}></Input>
                     </center>
                     </div>
                     
